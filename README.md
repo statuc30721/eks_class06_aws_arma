@@ -72,7 +72,7 @@ You can also modify the code and workflow to use a different repository where th
 
 ## Section III - Streamline User Access
 
-This provides a workflow leveraging Terraform for creation of a IAM group that has read-only access to a Amazon S3 bucke and administrator access to AWS Bedrock.
+This provides a workflow leveraging Terraform for creation of a IAM group that has read-only access to a Amazon S3 bucket and administrator access to AWS Bedrock.
 
 It also allows for creation of IAM users and adds them to the previously created IAM group.
 
