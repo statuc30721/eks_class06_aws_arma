@@ -40,7 +40,7 @@ ec2-bastion-deployment/ec2-bastion-notes.md
 
 Below are examples of deployed assets:
 
-- EKS deplpoyment with Bastion, Prometheus and Grafana
+- EKS deplpoyment with EC2 Instance, Prometheus and Grafana
 
 ![Deployed Bastion, AWS EKS console, Grafana and Prometheus ](/graphics/deployment-screenshot.jpg)
 
@@ -57,6 +57,10 @@ Below are examples of deployed assets:
 - Envoy Deployment
 
 ![Envoy Deployed](/graphics/eks-envoy-deployment.png)
+
+- Grafana and Prometheus Stack Deployed
+
+![EKS-Prom-Stack](/graphics/eks-prom-grafana-stack.png)
 
 
 ## Section II - Deploy applications to EKS using Docker
