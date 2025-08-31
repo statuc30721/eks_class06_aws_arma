@@ -45,7 +45,15 @@ Below are examples of deployed assets:
 ![Deployed Bastion, AWS EKS console, Grafana and Prometheus ](/graphics/deployment-screenshot.jpg)
 
 
-- 
+- EKS VPC Network 
+
+![VPC Network Map](/graphics/eks-vpc-resource-map.png)
+
+
+- EKS Cluster Automatic Scaling Group
+![EKS ASG](/graphics/eks-cluster-auto-scaling-group.png)
+
+
 ## Section II - Deploy applications to EKS using Docker
 
 This provides instruction for deploying containerized applications built using Docker and deploying them into a EKS cluster. In this section AWS ECR is leveraged. 
