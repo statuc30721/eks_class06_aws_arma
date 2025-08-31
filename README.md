@@ -51,6 +51,7 @@ Below are examples of deployed assets:
 
 
 - EKS Cluster Automatic Scaling Group
+
 ![EKS ASG](/graphics/eks-cluster-auto-scaling-group.png)
 
 
