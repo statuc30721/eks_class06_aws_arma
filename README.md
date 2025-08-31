@@ -54,6 +54,10 @@ Below are examples of deployed assets:
 
 ![EKS ASG](/graphics/eks-cluster-auto-scaling-group.png)
 
+- Envoy Deployment
+
+![Envoy Deployed](/graphics/eks-envoy-deployment.png)
+
 
 ## Section II - Deploy applications to EKS using Docker
 
