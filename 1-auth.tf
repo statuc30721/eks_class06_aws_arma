@@ -41,10 +41,17 @@ terraform {
   # region as where the kubernetes cluster will reside.
 
   backend "s3" {
+<<<<<<< Updated upstream
     bucket  = "coldduck203"                     # Set the bucket name to one you own.
     key     = "tshoot-083025-task1-v2.tfstate"  # Input your own file name here.
     region  = "us-east-1"                       # Please make sure you make this region match where you deploy your cluster.
     encrypt = true                              # Enable encryption of your data.
+=======
+    bucket  = "coldduck203"                    # Set the bucket name to one you own.
+    key     = "tshoot-083025-task1-v2.tfstate" #
+    region  = "us-east-1"                      # Please make sure you make this region match where you deploy your cluster.
+    encrypt = true                             # Enable encryption of your data.
+>>>>>>> Stashed changes
   }
 
 }
