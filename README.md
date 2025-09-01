@@ -18,14 +18,15 @@ There are two options in the deployment. Option (1) is automated and Option (2) 
 
 The instructions for manual installation of Envoy, Grafana and Prometheus are in the following files:
 - Envoy
-envoy-deplpyment/envoy-notes.md
+
+    envoy-deplpyment/envoy-notes.md
 
 - Prometheus
 
-prometheus-deployment/prometheus-notes.md
+    prometheus-deployment/prometheus-notes.md
 
 - Grafana
-grafana-deployment/grafana-notes.md
+    grafana-deployment/grafana-notes.md
 
 [NOTE] The default configuration is for terraform to deploy the cluster with services automatically. The only service that is not automatically deployed is Envoy.
 
