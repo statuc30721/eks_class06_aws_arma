@@ -40,7 +40,7 @@ terraform {
 
 variable "devops_usernames" {
   type        = list(string)
-  default     = ["JangoFett", "CountDooku", "GeneralGrievous", "Emperor", "MaceWindu"]
+  default     = ["JangoFett", "CountDooku", "GeneralGrievous", "Emperor", "MrMajestik"]
   description = "List of usernames to be allowed access to AWS"
 }
 
