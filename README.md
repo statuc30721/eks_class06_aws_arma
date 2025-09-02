@@ -84,12 +84,12 @@ To perform AWS IAM account management tasks enter the directory in this reposito
 
 [SCREENSHOTS]
 
-Account Creation
+- Account Creation
 
 ![initial deployment](/graphics/acct-mgmt-initial-deployment.png)
 
 
-Account Removed
+- Account Removed
 
 ![account deletion stage 1](/graphics/acct-mgmt-remove-macewindu.png)
 
@@ -97,7 +97,7 @@ Account Removed
 ![account deleted final](/graphics/acct-mgmt-macewindu-removed.png)
 
 
-New Account Added
+- New Account Added
 
 ![account added to IAM group](/graphics/acct-mgmt-new-user-added.png)
 
