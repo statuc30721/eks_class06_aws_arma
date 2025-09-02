@@ -4,7 +4,7 @@
 
 # We will leverage the prometheus helm chart to install prometheus.
 
-# We set dependancy on other services that *must* be up and running
+# We set dependency on other services that *must* be up and running
 # before we deploy the prometheus stack.
 
 # resource "helm_release" "kube-prometheus-stack" {
