@@ -37,7 +37,14 @@ terraform apply
 ```
 After running "terraform apply" you will need to input yes for terraform to run the tasks in your configuration.
 
+4. Verify via AWS CLI or AWS IAM console that the accounts were created and match your required settings.
+
 # Obtaining user password
+
+This is a work in progress since what should occur is encryption of each accounts password and also provide the console sign-in link that AWS IAM creates for each user account that has a password created for the user.
+
+For now you will need to obtain the passwords and manually send notification including the Console sign-in URL to each user who has an account created via terraform.
+
 To obtain the initial password that AWS IAM created you can add this to a file like account_output.tf
 
 The output below will not actually display any account passwords. However uncommenting the field below and running terraform output -json and locating the created user accounts will allow for obtaining unencrypted passwords for each account.
@@ -57,6 +64,9 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_
 
 # }
 ```
+
+
+
 # IAM Account modification (including Account Deletion)
 If the account was created leveraging terraform you can delete one or multiple users.
 
