@@ -86,7 +86,7 @@ To perform AWS IAM account management tasks enter the directory in this reposito
 
 - Account Creation
 
-![initial deployment](/graphics/acct-mgmt-initial-deployment.png)
+![initial deployment](/graphics/acct-mgmt.jpg)
 
 
 - Account Removal
