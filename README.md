@@ -89,7 +89,7 @@ To perform AWS IAM account management tasks enter the directory in this reposito
 ![initial deployment](/graphics/acct-mgmt-initial-deployment.png)
 
 
-- Account Removed
+- Account Removal
 
 ![account deletion stage 1](/graphics/acct-mgmt-remove-macewindu.png)
 
