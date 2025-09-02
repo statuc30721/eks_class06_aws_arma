@@ -5,6 +5,20 @@
 
 2. Revise the file named iam-devops-group.tf
 
+    - Update the usernames in the variable section named “devops_usernames”
+
+    - Set the name of the AWS group in the “name” block of resource “aws_iam_group”
+
+    - If you do not want passwords automatically generated then comment out the section
+    labeled “aws_iam_user_login_profile”
+
+    ** If you don’t use the login profile function your IAM administrator will need to
+    manually enable console access for each account that is created.
+
+    - Change the name for demo-bucket300 to an actual bucket for your organization.
+    
+    - Make any required adjustments to the S3 and/or Bedrock IAM policies.
+
 3. Initialize Terraform
 
 ```
@@ -15,7 +29,7 @@ terraform validate
 ```
 
 ```
-terrafor plan
+terraform plan
 ```
 
 ```
@@ -43,3 +57,23 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_
 
 # }
 ```
+# IAM Account modification (including Account Deletion)
+If the account was created leveraging terraform you can delete one or multiple users.
+
+1. Update the usernames with *ONLY* the names you want to modify/delete from IAM.
+
+2. Then run terraform plan to display what terraform plans to do. This is your opportunity to verify what account you are modifying.
+
+3. Run terraform apply and the account will be modified.
+
+# IAM Policy modification
+
+If you need to modify a IAM policy, you can change the JSON file or add an additional policy.
+
+1. Make required revision to the applicable IAM policy.
+
+2. Save the terraform file.
+
+3. Then run terraform plan to display what terraform plans to do. This is your opportunity to verify what account you are modifying.
+
+4. Run terraform apply and the IAM policy should change. You can verify your changes via AWS CLI or via the AWS console for IAM.

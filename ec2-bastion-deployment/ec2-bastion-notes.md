@@ -23,12 +23,12 @@ https://docs.aws.amazon.com/cli/latest/reference/ec2/get-password-data.html#exam
 
 To obtain the password of the bastion EC2 instance you will need to know the password. The default username for a windows EC2 instance is Administrator
 
-In the terraform code the Windows EC2 instance ouputs its instance ID. 
+In the terraform code the Windows EC2 instance outputs its instance ID. 
 
 
-1. Get the descrypted password. 
+1. Get the decrypted password. 
 [NOTE] You must have the PEM file that matches the name of the key that was used when the EC2 instance was deployed.
-In this project a key named bastionkey was used. You will need to change the name of that file to match a key you have
+In this project a key named "bastionkey" was used. You will need to change the name of that file to match a key you have
 in your AWS region where you deploy the EKS cluster and the EC2 bastion.
 
 In this example command you will need to replace the instance-id value with the value of your actual EC2 instance and also provide the path to the encryption key .pem file.
