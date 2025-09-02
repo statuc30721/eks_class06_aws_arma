@@ -80,6 +80,8 @@ It also allows for creation of IAM users and adds them to the previously created
 
 Variables are incorporated to allow for changes (as needed).
 
+To perform AWS IAM account management tasks enter the directory in this repository named account_management. Once in the directory, follow the instructions in the file named account_management/account_setup.md.
+
 
 References: 
 
