@@ -82,6 +82,25 @@ Variables are incorporated to allow for changes (as needed).
 
 To perform AWS IAM account management tasks enter the directory in this repository named account_management. Once in the directory, follow the instructions in the file named account_management/account_setup.md.
 
+[SCREENSHOTS]
+
+Account Creation
+
+![initial deployment](/graphics/acct-mgmt-initial-deployment.png)
+
+
+Account Removed
+
+![account deletion stage 1](/graphics/acct-mgmt-remove-macewindu.png)
+
+
+![account deleted final](/graphics/acct-mgmt-macewindu-removed.png)
+
+
+New Account Added
+
+![account added to IAM group](/graphics/acct-mgmt-new-user-added.png)
+
 
 References: 
 
