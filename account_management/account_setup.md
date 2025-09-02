@@ -1,7 +1,15 @@
+# Environment Setup
+1. Set AWS region to the region you intend to manage AWS IAM accounts.
+
+2. Set the storage backend to the region where you will be managing AWS IAM accounts. This S3 bucket will store your terraform "state" files to allow for recovery and management by other users versus maintaining a local state file on a account managers system.
+
+
 # Create an AWS IAM Group and users
 
 
 1. Switch to the account_management directory.
+
+- Set your AWS CLI account profile to a user who can perform account administration including creation, deletion and policy management.
 
 2. Revise the file named iam-devops-group.tf
 
