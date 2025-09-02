@@ -54,7 +54,7 @@ resource "aws_eks_node_group" "private-nodes" {
 
   # We leverage standard EC2 instances instead of the default larger types.
   capacity_type  = "ON_DEMAND"
-  instance_types = ["t3.small"]
+  instance_types = ["t3.medium"]
 
   scaling_config {
     desired_size = 2
@@ -72,7 +72,7 @@ resource "aws_eks_node_group" "private-nodes" {
     role = "general"
   }
 
-  # Set IAM role policy dependancy.
+  # Set IAM role policy dependency.
   depends_on = [
     aws_iam_role_policy_attachment.nodes-AmazonEKSWorkerNodePolicy,
     aws_iam_role_policy_attachment.nodes-AmazonEKS_CNI_Policy,
