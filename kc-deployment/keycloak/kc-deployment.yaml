@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: "keycloak-demo"
-          image: 261519058382.dkr.ecr.us-east-1.amazonaws.com/class06/keycloak-demo:latest
+          image: public.ecr.aws/i0v0m7z7/class06/kc-demo:latest
           imagePullPolicy: "Always"
           env:
             - name: "KC_BOOTSTRAP_ADMIN_USERNAME"
