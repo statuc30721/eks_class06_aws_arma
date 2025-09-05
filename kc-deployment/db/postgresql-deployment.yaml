@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: 261519058382.dkr.ecr.us-east-1.amazonaws.com/class06/postgresql-demo:latest
+          image: public.ecr.aws/i0v0m7z7/class06/postgresql-demo:latest
           imagePullPolicy: "IfNotPresent"
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
