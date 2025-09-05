@@ -40,7 +40,7 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker build -t <image-name> .
 ```
 
-[NOTE] On a ARM64 based system (e.g. MacOS) you will need to use buildx if using Docker.
+[NOTE] On an ARM64 based system (e.g. MacOS) you will need to use buildx if using Docker.
 
 ```
 docker buildx build . --platform=linux/amd64 -t  class06/postgresql-demo:latest --load
@@ -117,3 +117,25 @@ If everything started successfully you should see in your console something simi
 [NOTE] In this screenshot you should see all services, pods and deployments in the namespace keycloak-demo.
 
 ![kubectl info](/graphics/kubectl-get-svc-pod-deployments-pgsql.png)
+
+## Access Keycloak page
+
+This keycloak deployment uses a self-signed SSL certificate. So you will see an error when you first attempt to access the page as pictured below:
+
+![keycloak ssl error](/graphics/keycloak-self-signed-cert-issue.png)
+
+Until you provide your own legitimate SSL certificate the error will occur. Continue and allow connection and you should see the following login page:
+
+![keycloak login](/graphics/keycloak-login-page.png)
+
+1. Login to the keycloak administrator console with username admin and password admin.
+
+2. Begin to configure keycloak by changing the administrator account. 
+
+https://www.keycloak.org/server/configuration#_creating_the_initial_admin_user
+
+[REFERENCE(s)] 
+
+https://www.keycloak.org/guides#server
+
+https://www.keycloak.org/securing-apps/overview
