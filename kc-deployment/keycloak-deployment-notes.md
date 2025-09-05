@@ -11,10 +11,10 @@ https://www.keycloak.org/operator/basic-deployment
 
 For development testing use the command below to create a self-signed certificate for your keycloak deployment. Be sure to create the certificates outside of the repository folder and store in a different folder.
 
-## Deploy Keycloak
+# Deploy Keycloak
 
 
-# Create Docker images for Keycloak and PostgreSQL
+## Create Docker images for Keycloak and PostgreSQL
 
 ## Obtain official docker image of Keycloak and PostgreSQL
 
