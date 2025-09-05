@@ -1,5 +1,5 @@
 
-# Keycloak Deployment Notes
+# Keycloak Deployment
 
 We will use the development database configuration per the software developers basic deployment guide.
 
