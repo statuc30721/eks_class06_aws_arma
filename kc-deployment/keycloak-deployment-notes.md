@@ -29,9 +29,9 @@ To build a postgresql container from source can be found in references https://g
 
 Start Docker service
 
-1. Login to private or public ECR repository.
+1. Login to private or public ECR repository following the repository instructions.
 ```
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 261519058382.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin xxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com
 ```
 
 2. Build docker image for keycloak and postgresql.
