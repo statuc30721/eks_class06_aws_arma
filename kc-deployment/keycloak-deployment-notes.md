@@ -14,13 +14,15 @@ For development testing use the command below to create a self-signed certificat
 # Deploy Keycloak
 
 
-## Create Docker images for Keycloak and PostgreSQL
-
 ## Obtain official docker image of Keycloak and PostgreSQL
 
 [REFERENCE]
 
 https://www.keycloak.org/keycloak-benchmark/kubernetes-guide/latest/util/custom-image-for-keycloak
+
+At this stage we will obtain docker container images from an official repository. You also have the option of building containers from scratch for keycloak at https://github.com/keycloak/keycloak/blob/main/docs/building.md.
+
+To build a postgresql container from source can be found in references https://github.com/docker-library/postgres and https://github.com/docker-library/docs/tree/master/postgres. Your mileage may vary for postgresql as it is not a small project and the maintainers do a really good job at providing patched container images and hosting them on repositories like Docker hub.
 
 
 1. Pull official docker image for Keycloak and PostgreSQL
@@ -70,7 +72,15 @@ docker push XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/<repo-name>
 ## Deploy PostgreSQL database and Keycloak to EKS
 For now we use manual method using kubectl to deploy the database and keycloak containers to the kubernetes cluster.
 
-1. Deploy PostgresQL
+1. Create namespace 
+In this demonstration we use the name that is also in all of the configurations which is keycloak-demo
+
+```
+kubectl create namespace keycloak-demo
+```
+
+
+2. Deploy PostgresQL
 
 ```
 kubectl apply -f kc-deploymentdb/postgresql-pv.yaml
@@ -91,11 +101,7 @@ Verify postgresql is running and services are up
 kubectl get deploy,svc,pod -n keycloak-demo
 ```
 
-![kubectl pgsql info](/graphics/kubectl-get-svc-pod-deployments-pgsql.png)
-
-
-
-2. Deploy Keycloak
+3. Deploy Keycloak
 
 ```
 kubectl apply -f kc-deployment/keycloak/kc-deployment.yaml
@@ -104,3 +110,16 @@ kubectl apply -f kc-deployment/keycloak/kc-deployment.yaml
 ```
 kubectl apply -f kc-deployment/keycloak/keycloak-service.yaml
 ```
+
+
+Verify keycloak is running and services are up.
+
+```
+kubectl get deploy,svc,pod -n keycloak-demo
+```
+
+If everything started successfully you should see in your console something similar to the below screenshot:
+
+[NOTE] In this screenshot you should see all services, pods and deployments in the namespace keycloak-demo.
+
+![kubectl info](/graphics/kubectl-get-svc-pod-deployments-pgsql.png)
