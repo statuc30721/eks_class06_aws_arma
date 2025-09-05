@@ -7,7 +7,7 @@
 # We set dependency on other services that *must* be up and running
 # before we deploy the portainer stack.
 
-/* resource "helm_release" "portainer" {
+resource "helm_release" "portainer" {
   depends_on = [aws_eks_node_group.private-nodes,
     null_resource.update_kubeconfig,
   aws_eks_addon.ebs_csi_driver]
@@ -23,4 +23,4 @@
   ]
 
 
-} */
+}
