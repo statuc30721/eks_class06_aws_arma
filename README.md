@@ -72,6 +72,21 @@ This provides instruction for deploying containerized applications built using D
 You can also modify the code and workflow to use a different repository where the container images will be stored (e.g. Sonatype Nexus, Docker Hub, Quay.io)
 
 
+For this proof of concept various services could have been deployed in a cluster. Three web services were deployed in EKS. 
+
+Keycloak Open Source Identity and Access Management https://www.keycloak.org/
+
+Instructions to deploy Keycloak can be found in kc-deployment/keycloak-deployment-notes.md
+
+Below are some screenshots from a demonstration deployment of keycloak on EKS.
+
+
+- Keycloak demonstration deployed on AWS EKS with customized container images
+
+![keycloak deployed](/graphics/keycloak-on-eks-custom-container-images.png)
+
+
+
 ## Section III - Streamline User Access
 
 This provides a workflow leveraging Terraform for creation of a IAM group that has read-only access to a Amazon S3 bucket and administrator access to AWS Bedrock.
