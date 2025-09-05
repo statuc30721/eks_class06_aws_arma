@@ -29,7 +29,8 @@ resource "aws_security_group" "vpc-sg01-bastion" {
   }
 
   tags = {
-    Name    = "${var.cluster_name}-sg01-bastion"
-    Service = "BastionHost"
+    Name                            = "${var.cluster_name}-sg01-bastion"
+    Service                         = "BastionHost"
+    "kubernetes.io/cluster/staging" = "owned"
   }
 }
