@@ -139,3 +139,39 @@ https://www.keycloak.org/server/configuration#_creating_the_initial_admin_user
 https://www.keycloak.org/guides#server
 
 https://www.keycloak.org/securing-apps/overview
+
+## Keycloak teardown
+
+In this section we will tear down the demonstration keycloak and postgresql deployment. For all deployments using kubectl you will more than likely need to manually delete/uninstall the deployments.
+
+[CAUTION] Back up any data you want to retain from your keycloak deployment as these instructions destroy the database and keycloak installations.
+
+1. Delete keycloak deployment
+
+```
+kubectl delete -f kc-deployment/keycloak/kc-deployment.yaml
+```
+
+```
+kubectl delete -f kc-deployment/keycloak/keycloak-service.yaml
+```
+
+2. Delete postgresql database and persistent storage.
+
+```
+kubectl delete -f kc-deployment/db/postgresql-deployment.yaml
+```
+
+```
+kubectl delete -f kc-deployment/db/postgresql-service.yaml
+```
+
+```
+kubectl delete -f kc-deployment/db/postgresql-pv-claim.yaml
+```
+
+```
+kubectl delete -f kc-deployment/db/postgresql-pv.yaml
+```
+
+At this stage you can continue with other cluster maintenance actions (e.g. deployments, patching,teardown).
