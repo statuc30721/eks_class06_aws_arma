@@ -83,7 +83,7 @@ Below are some screenshots from a demonstration deployment of keycloak on EKS.
 
 - Keycloak demonstration deployed on AWS EKS with customized container images
 
-![keycloak deployed](/graphics/keycloak-on-eks-custom-container-images.png)
+![keycloak deployed](/graphics/keycloak-on-eks-custom-container-image.png)
 
 
 
