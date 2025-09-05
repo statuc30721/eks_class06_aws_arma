@@ -86,6 +86,9 @@ Below are some screenshots from a demonstration deployment of keycloak on EKS.
 ![keycloak deployed](/graphics/keycloak-on-eks-custom-container-image.png)
 
 
+- Keycloak demonstration login page
+
+![keycloak admin login](/graphics/keycloak-login-page.png)
 
 ## Section III - Streamline User Access
 
