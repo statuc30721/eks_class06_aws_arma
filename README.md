@@ -72,7 +72,7 @@ This provides instruction for deploying containerized applications built using D
 You can also modify the code and workflow to use a different repository where the container images will be stored (e.g. Sonatype Nexus, Docker Hub, Quay.io)
 
 
-For this proof of concept various services could have been deployed in a cluster. Three web services were deployed in EKS. 
+For this proof of concept various services could have been deployed in a cluster. Web services were deployed in EKS using this repository.
 
 Keycloak Open Source Identity and Access Management https://www.keycloak.org/
 
@@ -89,6 +89,16 @@ Below are some screenshots from a demonstration deployment of keycloak on EKS.
 - Keycloak demonstration login page
 
 ![keycloak admin login](/graphics/keycloak-login-page.png)
+
+Portainer https://www.portainer.io/
+
+Portainer delivers enterprise-grade container management, simplified and engineered for everyone. From multi‑cluster agility to remote‑site efficiency, it empowers IT and OT teams with visibility, control, and ROI, all without complexity or vendor lock‑in.
+
+Portainer deployment instructions are in the file portainer-deployment/portainer-notes.md.
+
+![Portainer deployed](/graphics/eks-portainer-deploy-terraform-helm.png)
+
+
 
 ## Section III - Streamline User Access
 
