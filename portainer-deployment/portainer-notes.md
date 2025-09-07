@@ -16,7 +16,7 @@ helm repo add portainer https://portainer.github.io/k8s/
 helm repo update
 ```
 
-3. You have three options when installing portainer, NodePort, Cloud Provider Loadbalancer nd ClusterIP with an ingress.
+3. You have three options when installing portainer, NodePort, Cloud Provider Loadbalancer and ClusterIP with an ingress.
 
 For this deployment we will leverage a loadbalancer to connect to portainer versus using a ingress service.
 
